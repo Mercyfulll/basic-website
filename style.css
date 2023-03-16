@@ -1,15 +1,20 @@
-body{
-    background-color: #d7dae0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
-
-h1{
-  color: white;
-  text-align: center;
-  margin-top: 4em;
-  margin-left: 4em;
-
+body {
+  background-color: #eae4e9;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+h1 {
+  color:black;
+  text-align: center;
+  padding: 0.5em;
+  
+}
+
+h2 {
+  color:black;
+  font-size: x-large;
+}
+
 a {
   display: block;
   color: rgb(97, 63, 63);
@@ -18,92 +23,151 @@ a {
   text-decoration: dotted;
 }
 
-.box {
-    border: 3 px solid black;  
-    padding: 1em;
-    margin: 1em;
-    border-radius: 1em;
-    display: flex;
-}
 .me {
-    display: flex;
-    text-align: center;
-    margin-bottom: 2em;
-    background-image: url(Table-Mountain.JPG);
-    background-repeat: no-repeat;
-    height: 250px;
+  text-align: center;
+  background-image: url(Table-Mountain.JPG);
+  background-size:cover;
+  background-repeat: no-repeat;
+  margin: 1em;
+  padding: 4em;
+  border-radius: 1em;
+  margin-bottom: 3em;
+  margin-top: 3em;
 }
-table {
-    border-collapse: collapse;
-    width: 50%;
-    margin-bottom: 3em;
-    margin-left: auto;
-    margin-right: auto;
-
-  }
-  th {
-    background-color: #606c38;
-    
-  }
-  
-  td, th {
-    border: 1px solid black;
-    text-align: left;
-    padding: 8px;
-  }
-  
-
-.self {
-    margin : 2em;
-    margin-left: 20em;
-}
-.name {
-  text-align: center;  
+.self{
+  text-align: center;
 }
 
-.city{
-    display: inline-flex;
-    margin-bottom: 3em;
-    background-color: #606c38;
-    padding: 0.4em;
+.city {
+  margin-bottom: 2em;
+  background-color: #bee1e6;
+  margin: 1em;
+  padding: 1em;
+  border-radius: 1em;
+  font-size: larger;
+  margin-bottom: 3em;
 }
 
-.cityimage{
-    margin: 1em;
-    padding: 1em;
+.cityimage {
+  text-align: center;
+  padding-bottom: 0.3em;
 }
 
-.citytext{
-    text-align: center;
-    margin: 2em;
-    padding: 2em;
-    font-size: larger;
-
+.citytext {
+  text-align: center;
 }
 
-.language{
-  background-color: aquamarine;
-}
 .reason {
   text-align: center;
+  margin: 2em;
+  padding-bottom: 0.2em;
   font-size: larger;
-  margin-bottom: 0.3em;
 }
 
+.language {
+  background-color: #cddafd;
+  padding: 1em;
+  border-radius: 1em;
+  margin: 1em;
+  margin-bottom: 2em;
+}
+
+table {
+  border-collapse: collapse;
+  width: 50%;
+  margin-bottom: 2em;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+th {
+  background-color:#b7b7a4;
+
+}
+
+td,
+th {
+  border: 1px solid black;
+  padding: 10px;
+}
 .historic {
+  background-color:#bee1e6
+}
+.box1,.box2,.box3{
+  padding: 1em;
+  margin: 1em;
+  border-radius: 1em;
+}
+.constitutional,
+.nelson,
+.hector{
+  width: 50%;
+  padding: 0.2em;
+  margin: 0.3em;
+} 
+.box1 {
+  background-color: #dfe7fd;
+
+}
+
+.box2 {
+  background-color: #fff1e6;
+}
+
+.box3 {
+  background-color: #fde2e4;
+}
+
+.hector {
+  float: right;
+}
+
+.constitutional{
+  float: left;
+}
+
+.nelson {
+  float: left;
+}
+
+@media(min-width: 760px) {
+
+  .me {
     display: flex;
-    background-color: coral;
-    margin-bottom: 5em;
-}
+    align-items: center;
+    justify-content: center;
+  }
+  .city {
+    display: flex;
+  }
 
-.place1{
-  float: right;
-}
+  .citytext {
+    margin-top: 7em;
+  }
+  .historic{
+    background-color:#bee1e6;
+    display: flex;
+    border-radius: 1em;
+    padding: 2em;
+    margin: 1em;
+    position: absolute;
+  }
 
-.place2{
-  float: right;
-}
+  .constitutional,
+  .hector,
+  .nelson {
+    width: 50%;
+    float: right;
+    margin: 0.2em;
+    padding: 0.1em;
+  }
 
-.place3{
-  float: right;
+  .box1,
+  .box2,
+  .box3 {
+    padding: 1em;
+    margin: 1em;
+    width: 33.3%;
+  }
 }
