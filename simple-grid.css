@@ -18,6 +18,37 @@ body {
   font-size: 100%;
 }
 
+.back {
+  background-image: url(Table-Mountain.JPG);
+  background-size: cover;
+  margin-top: 3em;
+
+}
+
+.self {
+  padding-left: 5em;
+}
+
+table {
+  border-collapse: collapse;
+  width: 50%;
+  margin-bottom: 2em;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+th {
+  background-color: #b7b7a4;
+
+}
+
+td,
+th {
+  border: 1px solid black;
+  padding: 10px;
+}
+
 /* ROOT FONT STYLES */
 
 * {
@@ -29,11 +60,13 @@ body {
 /* TYPOGRAPHY */
 
 h1 {
-  font-size: 2.5rem;
+  text-align: center;
+
 }
 
 h2 {
   font-size: 2rem;
+  padding-top: 2em;
 }
 
 h3 {
@@ -58,7 +91,7 @@ p {
   line-height: 1.8;
 }
 
-.citytext{
+.citytext {
   margin-top: 3em;
 }
 
@@ -177,22 +210,45 @@ p {
 }
 
 .row::after {
-	content: "";
-	display: table;
-	clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .hidden-sm {
   display: none;
 }
 
-@media only screen and (min-width: 33.75em) {  /* 540px */
+.hector {
+  float: left;
+}
+
+.constitutional,
+.nelson {
+  float: right;
+}
+
+@media only screen and (min-width: 33.75em) {
+
+  /* 540px */
   .container {
     width: 80%;
   }
 }
 
-@media only screen and (min-width: 45em) {  /* 720px */
+@media only screen and (min-width: 45em) {
+
+  /* 720px */
+  .container {
+    width: 80%;
+  }
+
+  .back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .col-1 {
     width: 4.33%;
   }
@@ -246,9 +302,32 @@ p {
   }
 }
 
-@media only screen and (min-width: 60em) { /* 960px */
+@media only screen and (min-width: 60em) {
+
+  /* 960px */
   .container {
     width: 75%;
     max-width: 60rem;
+  }
+
+  .h1 {
+    padding-left: 8em;
+  }
+
+  .back {
+    display: flex;
+  }
+
+  .constitutional,
+  .hector,
+  .nelson {
+    float: right;
+  }
+
+  .box1,
+  .box2,
+  .box3 {
+    height: auto;
+    font-size:x-small;
   }
 }
